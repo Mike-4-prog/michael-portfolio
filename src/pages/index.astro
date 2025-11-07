@@ -1,0 +1,398 @@
+---
+// src/pages/index.astro
+import '../styles/custom.css';
+---
+
+<html lang="en">
+	<head>
+		<title>Michael Uzukwu - Technical Writer & Documentation Engineer</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Technical Writer specializing in API documentation, developer portals, and docs-as-code" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="portfolio-nav">
+			<div class="nav-container">
+				<a href="/" class="nav-logo">Michael Uzukwu</a>
+				<div class="nav-links">
+					<a href="#home">Home</a>
+					<a href="#projects">Projects</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Home/Hero Section with Photo -->
+		<section id="home" class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">Michael Uzukwu</h1>
+						<p class="hero-tagline">Technical Writer & Documentation Specialist</p>
+						<p class="hero-description">I transform complex technical concepts into clear, concise, and user-friendly documentation. Specializing in API documentation, technical articles, and product documentation.</p>
+						<div class="hero-actions">
+							<a href="#projects" class="hero-btn">View My Work →</a>
+							<a href="#contact" class="hero-btn secondary">Contact Me ↗</a>
+						</div>
+					</div>
+					<div class="hero-image">
+						<img src="/michael-photo.jpg" alt="Michael Uzukwu - Technical Writer" class="profile-photo" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="section">
+			<div class="container">
+				<h2>Featured Work</h2>
+				
+				<div class="work-tabs">
+					<button class="tab-button active" data-tab="documentation">Documentation</button>
+					<button class="tab-button" data-tab="articles">Articles</button>
+					<button class="tab-button" data-tab="contributions">Contributions</button>
+				</div>
+				
+				<!-- Documentation Tab -->
+				<div class="tab-content active" id="documentation">
+					<div class="card-grid">
+						<div class="card">
+							<a href="https://refract-production.netlify.app/" target="_blank" class="project-image-link">
+								<img src="/refract.png" alt="Refract Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Project</span>
+								</div>
+							</a>
+							<h3>Refract Documentation</h3>
+							<p>Technical writing capstone project featuring Docusaurus documentation with Algolia search integration and modern design patterns.</p>
+							<div class="tech-stack">
+								<span>Docusaurus</span>
+								<span>Algolia</span>
+								<span>React</span>
+								<span>Markdown</span>
+							</div>
+							<a href="https://refract-production.netlify.app/" target="_blank" class="project-link">Live Site</a>
+						</div>
+
+						<div class="card">
+							<a href="https://omarray.netlify.app/" target="_blank" class="project-image-link">
+								<img src="/openmadness.png" alt="Openmadness Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Project</span>
+								</div>
+							</a>
+							<h3>Openmadness Documentation</h3>
+							<p>Led documentation setup using VuePress with structured content architecture, navigation design, and team coordination for open-source project.</p>
+							<div class="tech-stack">
+								<span>VuePress</span>
+								<span>GitHub</span>
+								<span>Markdown</span>
+								<span>Netlify</span>
+							</div>
+							<a href="https://omarray.netlify.app/" target="_blank" class="project-link">Live Site</a>
+						</div>
+
+						<div class="card">
+							<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-image-link">
+								<img src="/vue.js.png" alt="Vue.js Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Project</span>
+								</div>
+							</a>
+							<h3>Vue.js Documentation</h3>
+							<p>Recreated Vue.js official documentation using Astro Starlight with enhanced navigation, performance optimization, and improved developer experience.</p>
+							<div class="tech-stack">
+								<span>Astro</span>
+								<span>Starlight</span>
+								<span>Markdown</span>
+								<span>Vercel</span>
+							</div>
+							<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-link">Live Site</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Articles Tab -->
+				<div class="tab-content" id="articles">
+					<div class="card-grid">
+						<div class="card">
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-image-link">
+								<img src="/docsascode.webp" alt="Docs as Code & CI/CD Pipelines Article" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">Read Article</span>
+								</div>
+							</a>
+							<h3>A Beginner-Friendly Guide to Docs as Code & CI/CD Pipelines</h3>
+							<p>A comprehensive guide explaining the docs-as-code methodology and how to implement CI/CD pipelines for documentation workflows.</p>
+							<div class="tech-stack">
+								<span>Technical Writing</span>
+								<span>CI/CD</span>
+								<span>Git</span>
+								<span>Documentation</span>
+							</div>
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-link">Read on Dev.to</a>
+						</div>
+
+						<div class="card">
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-image-link">
+								<img src="/codetolive.webp" alt="Deploying Astro Starlight on Vercel Article" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">Read Article</span>
+								</div>
+							</a>
+							<h3>From Code to Live in Minutes: Deploying My Astro Starlight Static Site on Vercel</h3>
+							<p>Step-by-step guide on deploying Astro Starlight documentation sites to Vercel with best practices for performance and SEO.</p>
+							<div class="tech-stack">
+								<span>Astro</span>
+								<span>Starlight</span>
+								<span>Vercel</span>
+								<span>Deployment</span>
+							</div>
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-link">Read on Dev.to</a>
+						</div>
+
+						<div class="card">
+							<div class="article-icon">💡</div>
+							<h3>Developer Experience Optimization</h3>
+							<p>Strategies for improving developer experience through better documentation and tooling.</p>
+							<div class="tech-stack">
+								<span>DX</span>
+								<span>UX Research</span>
+								<span>Documentation</span>
+							</div>
+							<a href="#" class="project-link">Coming Soon</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Contributions Tab -->
+				<div class="tab-content" id="contributions">
+					<div class="card-grid">
+						<!-- Opsimate Community Leadership -->
+						<div class="card">
+							<div class="contribution-icon">🏆</div>
+							<h3>Opsimate - Community Leader</h3>
+							<p>Leading documentation strategy and community engagement for Opsimate's open-source infrastructure monitoring platform.</p>
+							<div class="tech-stack">
+								<span>Documentation Strategy</span>
+								<span>Community Leadership</span>
+								<span>Technical Writing</span>
+								<span>Open Source</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Key Achievements:</strong></p>
+								<ul>
+									<li>Documentation maintenance and strategic planning</li>
+									<li>Community engagement and contributor mentorship</li>
+									<li>Hacktoberfest 2025 coordination</li>
+									<li>Created 5+ "good first issues" for new contributors</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Opsimate Technical Contributions -->
+						<div class="card">
+							<div class="contribution-icon">🔧</div>
+							<h3>Opsimate Documentation Improvements</h3>
+							<p>Technical enhancements and feature implementations for Opsimate's documentation platform.</p>
+							<div class="tech-stack">
+								<span>UI/UX</span>
+								<span>Google Analytics</span>
+								<span>Cookie Consent</span>
+								<span>Algolia Search</span>
+							</div>
+							<div class="contribution-links">
+								<a href="https://github.com/OpsiMate/documentation/pull/4" target="_blank" class="contribution-link">
+									<span class="link-title">Enhanced homepage & integrations</span>
+									<span class="link-description">Added icons, improved contrast, prepared Algolia search</span>
+								</a>
+								<a href="https://github.com/OpsiMate/documentation/pull/40" target="_blank" class="contribution-link">
+									<span class="link-title">GA4 analytics + cookie consent</span>
+									<span class="link-description">Implemented analytics tracking and legal compliance features</span>
+								</a>
+							</div>
+						</div>
+
+						<!-- Open Source Documentation Contributions -->
+						<div class="card">
+							<div class="contribution-icon">📚</div>
+							<h3>Open Source Documentation</h3>
+							<p>Contributions to various open-source projects improving documentation quality and clarity.</p>
+							<div class="tech-stack">
+								<span>Technical Writing</span>
+								<span>Markdown</span>
+								<span>Documentation</span>
+								<span>Content Strategy</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Notable Contributions:</strong></p>
+								<ul>
+									<li>Technical Writing Markdown Guide</li>
+									<li>Stellar Documentation improvements</li>
+									<li>Vaunt Documentation issue resolution</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- About Section with Photo -->
+<section id="about" class="section">
+	<div class="container">
+		<h2>About Me</h2>
+		<div class="about-content">
+			<div class="about-text">
+				<div class="about-photo-mobile">
+					<img src="/michael-photo-about.jpg" alt="Michael Uzukwu" class="profile-photo" />
+				</div>
+				<p>I'm a passionate and experienced technical writer specializing in creating clear, concise, and user-friendly documentation for complex technical products and services.</p>
+				
+				<p>With a background in both technology and communication, I bridge the gap between technical experts and end users, translating complex concepts into accessible documentation that meets the needs of diverse audiences. My goal is to create documentation that not only informs but also enhances the user experience.</p>
+				
+				<p>I've worked with teams across various industries to develop comprehensive documentation systems, including API references, user guides, technical articles, and product documentation. My approach focuses on understanding both the technical aspects of a product and the needs of its users.</p>
+				
+				<p>Beyond creating new documentation, I also excel at auditing existing content, identifying gaps, and implementing strategies to improve clarity, organization, and effectiveness. I'm comfortable working with various documentation tools and platforms, and I adapt quickly to new technologies and methodologies.</p>
+			</div>
+			
+			<div class="about-sidebar">
+				<div class="about-photo-desktop">
+					<img src="/michael-photo-about.jpg" alt="Michael Uzukwu" class="profile-photo" />
+				</div>
+				
+				<!-- Three Separate Skills Cards -->
+				<div class="about-skills">
+					<!-- Documentation Tools Card -->
+					<div class="skill-card">
+						<h3>Documentation Tools</h3>
+						<div class="skill-items">
+							<div class="skill-item">Astro Starlight</div>
+							<div class="skill-item">VuePress</div>
+							<div class="skill-item">MkDocs</div>
+							<div class="skill-item">Docusaurus</div>
+							<div class="skill-item">GitBook</div>
+							<div class="skill-item">Postman</div>
+							<div class="skill-item">OpenAPI</div>
+						</div>
+					</div>
+
+					<!-- Core Expertise Card -->
+					<div class="skill-card">
+						<h3>Core Expertise</h3>
+						<div class="skill-items">
+							<div class="skill-item">API Documentation</div>
+							<div class="skill-item">Developer Portals</div>
+							<div class="skill-item">Docs as Code</div>
+							<div class="skill-item">Documentation Audits</div>
+							<div class="skill-item">Content Strategy</div>
+							<div class="skill-item">Product Documentation</div>
+							<div class="skill-item">User Guides</div>
+							<div class="skill-item">Staging & Production Environment Setup</div>
+						</div>
+					</div>
+
+					<!-- Technical Skills Card -->
+					<div class="skill-card">
+						<h3>Technical Skills</h3>
+						<div class="skill-items">
+							<div class="skill-item">Markdown</div>
+							<div class="skill-item">YAML</div>
+							<div class="skill-item">HTML/CSS</div>
+							<div class="skill-item">Git/GitHub</div>
+							<div class="skill-item">CI/CD</div>
+							<div class="skill-item">REST APIs</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p class="contact-intro">Ready to work together? Let's create clear, concise, and user-friendly documentation for your product or service.</p>
+            
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="">What is this regarding?</option>
+                                <option value="documentation">Documentation Project</option>
+                                <option value="consulting">Consulting Work</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Your message..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h3>Email</h3>
+                        <p>Contact me directly at:</p>
+                        <a href="mailto:michael.uzukwu@example.com" class="contact-link">michael.uzukwu@example.com</a>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/mike-4-prog" target="_blank" class="social-link">
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/michael-uzukwu/" target="_blank" class="social-link">
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Availability</h3>
+                        <p>I'm currently available for freelance work and consulting on technical documentation projects. Reach out!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Michael Uzukwu. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script is:inline src="/tabs.js"></script>
+</body>
+</html>

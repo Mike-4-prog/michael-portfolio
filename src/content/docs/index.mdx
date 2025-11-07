@@ -1,40 +1,234 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: "Michael Uzukwu — Technical Writer"
+description: "API & Developer Documentation Specialist"
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+  title: "Michael Uzukwu"
+  tagline: "Technical Writer & Documentation Engineer"
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+<div class="hero-actions">
+  <a href="#featured-work" class="hero-btn">View My Work</a>
+  <a href="#contact" class="hero-btn secondary">Contact Me</a>
+</div>
 
-## Next steps
+## About Me
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+Technical Writer with expertise in creating structured, developer-focused documentation for cloud infrastructure, APIs, and open-source projects. Experienced in documentation audits, content strategy, and enhancing developer experience.
+
+## Skills & Experience
+
+<div class="skills-grid">
+  <div class="skills-category">
+    <h3>Documentation Tools</h3>
+    <div class="skills-list">
+      <span>Astro Starlight</span>
+      <span>VuePress</span>
+      <span>MkDocs</span>
+      <span>Docusaurus</span>
+      <span>GitBook</span>
+      <span>Postman</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Core Expertise</h3>
+    <div class="skills-list">
+      <span>API Documentation</span>
+      <span>Developer Portals</span>
+      <span>Docs as Code</span>
+      <span>Documentation Audits</span>
+      <span>Content Strategy</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Technical Skills</h3>
+    <div class="skills-list">
+      <span>Markdown</span>
+      <span>YAML</span>
+      <span>HTML/CSS</span>
+      <span>Git/GitHub</span>
+      <span>CI/CD</span>
+      <span>REST APIs</span>
+    </div>
+  </div>
+</div>
+
+## Featured Work
+
+<div class="work-tabs">
+  <button class="tab-button active" data-tab="documentation">Documentation</button>
+  <button class="tab-button" data-tab="articles">Articles</button>
+  <button class="tab-button" data-tab="contributions">Contributions</button>
+</div>
+
+<div class="tab-content active" id="documentation">
+  <div class="card-grid">
+    <div class="card">
+      <a href="https://refract-production.netlify.app/" target="_blank" class="project-image-link">
+        <img src="/refract.png" alt="Refract Documentation Screenshot" class="project-image" />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </a>
+      <h3>Refract Documentation</h3>
+      <p>Technical writing capstone project featuring Docusaurus documentation with Algolia search integration and modern design patterns.</p>
+      <div class="tech-stack">
+        <span>Docusaurus</span>
+        <span>Algolia</span>
+        <span>React</span>
+        <span>Markdown</span>
+      </div>
+      <a href="https://refract-production.netlify.app/" target="_blank" class="project-link">Live Site</a>
+    </div>
+
+    <div class="card">
+      <a href="https://omarray.netlify.app/" target="_blank" class="project-image-link">
+        <img src="/openmadness.png" alt="Openmadness Documentation Screenshot" class="project-image" />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </a>
+      <h3>Openmadness Documentation</h3>
+      <p>Led documentation setup using VuePress with structured content architecture, navigation design, and team coordination for open-source project.</p>
+      <div class="tech-stack">
+        <span>VuePress</span>
+        <span>GitHub</span>
+        <span>Markdown</span>
+        <span>Netlify</span>
+      </div>
+      <a href="https://omarray.netlify.app/" target="_blank" class="project-link">Live Site</a>
+    </div>
+
+    <div class="card">
+      <a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-image-link">
+        <img src="/vue.js.png" alt="Vue.js Documentation Screenshot" class="project-image" />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </a>
+      <h3>Vue.js Documentation</h3>
+      <p>Recreated Vue.js official documentation using Astro Starlight with enhanced navigation, performance optimization, and improved developer experience.</p>
+      <div class="tech-stack">
+        <span>Astro</span>
+        <span>Starlight</span>
+        <span>Markdown</span>
+        <span>Vercel</span>
+      </div>
+      <a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-link">Live Site</a>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="articles">
+  <div class="card-grid">
+    <div class="card">
+      <a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-image-link">
+        <img src="/docsascode.webp" alt="Docs as Code & CI/CD Pipelines Article Cover" class="project-image" />
+        <div class="image-overlay">
+          <span class="view-project">Read Article</span>
+        </div>
+      </a>
+      <h3>A Beginner-Friendly Guide to Docs as Code & CI/CD Pipelines</h3>
+      <p>A comprehensive guide explaining the docs-as-code methodology and how to implement CI/CD pipelines for documentation workflows.</p>
+      <div class="tech-stack">
+        <span>Technical Writing</span>
+        <span>CI/CD</span>
+        <span>Git</span>
+        <span>Documentation</span>
+      </div>
+      <a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-link">Read on Dev.to</a>
+    </div>
+
+    <div class="card">
+      <a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-image-link">
+        <img src="/codetolive.webp" alt="Deploying Astro Starlight on Vercel Article Cover" class="project-image" />
+        <div class="image-overlay">
+          <span class="view-project">Read Article</span>
+        </div>
+      </a>
+      <h3>From Code to Live in Minutes: Deploying My Astro Starlight Static Site on Vercel</h3>
+      <p>Step-by-step guide on deploying Astro Starlight documentation sites to Vercel with best practices for performance and SEO.</p>
+      <div class="tech-stack">
+        <span>Astro</span>
+        <span>Starlight</span>
+        <span>Vercel</span>
+        <span>Deployment</span>
+      </div>
+      <a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-link">Read on Dev.to</a>
+    </div>
+
+    <div class="card">
+      <div class="article-icon">💡</div>
+      <h3>Developer Experience Optimization</h3>
+      <p>Strategies for improving developer experience through better documentation and tooling.</p>
+      <div class="tech-stack">
+        <span>DX</span>
+        <span>UX Research</span>
+        <span>Documentation</span>
+      </div>
+      <a href="#" class="project-link">Coming Soon</a>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="contributions">
+  <div class="card-grid">
+    <div class="card">
+      <div class="contribution-icon">🤝</div>
+      <h3>Open Source Documentation</h3>
+      <p>Contributing to various open-source projects by improving documentation and creating comprehensive guides.</p>
+      <div class="tech-stack">
+        <span>Open Source</span>
+        <span>Community</span>
+        <span>Technical Writing</span>
+      </div>
+      <a href="https://github.com/mike-4-prog" target="_blank" class="project-link">View Contributions</a>
+    </div>
+
+    <div class="card">
+      <div class="contribution-icon">🔧</div>
+      <h3>Documentation Tooling</h3>
+      <p>Contributing to documentation tools and platforms to enhance the technical writing ecosystem.</p>
+      <div class="tech-stack">
+        <span>Tools</span>
+        <span>Automation</span>
+        <span>Innovation</span>
+      </div>
+      <a href="https://github.com/mike-4-prog" target="_blank" class="project-link">View Contributions</a>
+    </div>
+
+    <div class="card">
+      <div class="contribution-icon">🌐</div>
+      <h3>Community Workshops</h3>
+      <p>Conducting workshops and training sessions on technical writing and documentation best practices.</p>
+      <div class="tech-stack">
+        <span>Workshops</span>
+        <span>Training</span>
+        <span>Community</span>
+      </div>
+      <a href="#" class="project-link">Learn More</a>
+    </div>
+  </div>
+</div>
+
+## Contact
+
+**Ready to work together?**
+
+Let's create clear, concise, and user-friendly documentation for your product or service.
+
+<div class="contact-links">
+  <a href="https://github.com/mike-4-prog" target="_blank" class="contact-link">
+    <i class="fab fa-github"></i>GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/michael-uzukwu/" target="_blank" class="contact-link">
+    <i class="fab fa-linkedin"></i>LinkedIn
+  </a>
+  <a href="mailto:michael.uzukwu@example.com" class="contact-link">
+    <i class="fas fa-envelope"></i>Email
+  </a>
+</div>
+
+<script src="/tabs.js" defer></script>

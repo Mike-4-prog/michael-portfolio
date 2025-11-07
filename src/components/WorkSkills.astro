@@ -1,0 +1,77 @@
+---
+// No frontmatter needed
+---
+
+<div class="skills-grid">
+  <div class="skills-category">
+    <h3>Documentation Tools</h3>
+    <div class="skills-list">
+      <span>Astro Starlight</span>
+      <span>VuePress</span>
+      <span>MkDocs</span>
+      <span>Docusaurus</span>
+      <span>GitBook</span>
+      <span>Postman</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Core Expertise</h3>
+    <div class="skills-list">
+      <span>API Documentation</span>
+      <span>Developer Portals</span>
+      <span>Docs as Code</span>
+      <span>Documentation Audits</span>
+      <span>Content Strategy</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Technical Skills</h3>
+    <div class="skills-list">
+      <span>Markdown</span>
+      <span>YAML</span>
+      <span>HTML/CSS</span>
+      <span>Git/GitHub</span>
+      <span>CI/CD</span>
+      <span>REST APIs</span>
+    </div>
+  </div>
+</div>
+
+<style>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-category {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 191, 165, 0.2);
+}
+
+.skills-category h3 {
+  color: #00bfa5;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills-list span {
+  background: rgba(0, 191, 165, 0.1);
+  color: #00bfa5;
+  padding: 0.4rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 191, 165, 0.3);
+}
+</style>
