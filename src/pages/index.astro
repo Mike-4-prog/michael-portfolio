@@ -46,257 +46,304 @@ import '../styles/custom.css';
 		</section>
 
 		<!-- Projects Section -->
-		<section id="projects" class="section">
-			<div class="container">
-				<h2>Featured Work</h2>
-				
-				<div class="work-tabs">
-					<button class="tab-button active" data-tab="documentation">Documentation</button>
-					<button class="tab-button" data-tab="articles">Articles</button>
-					<button class="tab-button" data-tab="contributions">Contributions</button>
+<section id="projects" class="section">
+	<div class="container">
+		<h2>Featured Work</h2>
+		
+		<div class="work-tabs">
+			<button class="tab-button active" data-tab="documentation">Documentation</button>
+			<button class="tab-button" data-tab="articles">Articles</button>
+			<button class="tab-button" data-tab="contributions">Contributions</button>
+		</div>
+		
+		<!-- Documentation Tab - ALL 4 Projects -->
+		<div class="tab-content active" id="documentation">
+			<div class="card-grid">
+				<div class="card">
+					<a href="https://refract-production.netlify.app/" target="_blank" class="project-image-link">
+						<img src="/refract.png" alt="Refract Documentation" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">View Project</span>
+						</div>
+					</a>
+					<h3>Refract Documentation</h3>
+					<p>Technical writing capstone project featuring Docusaurus documentation with Algolia search integration and modern design patterns.</p>
+					<div class="tech-stack">
+						<span>Docusaurus</span>
+						<span>Algolia</span>
+						<span>React</span>
+						<span>Markdown</span>
+					</div>
+					<a href="https://refract-production.netlify.app/" target="_blank" class="project-link">Live Site</a>
 				</div>
-				
-				<!-- Documentation Tab - ALL 4 Projects -->
-				<div class="tab-content active" id="documentation">
-					<div class="card-grid">
-						<div class="card">
-							<a href="https://refract-production.netlify.app/" target="_blank" class="project-image-link">
-								<img src="/refract.png" alt="Refract Documentation" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">View Project</span>
-								</div>
-							</a>
-							<h3>Refract Documentation</h3>
-							<p>Technical writing capstone project featuring Docusaurus documentation with Algolia search integration and modern design patterns.</p>
-							<div class="tech-stack">
-								<span>Docusaurus</span>
-								<span>Algolia</span>
-								<span>React</span>
-								<span>Markdown</span>
-							</div>
-							<a href="https://refract-production.netlify.app/" target="_blank" class="project-link">Live Site</a>
-						</div>
 
-						<div class="card">
-							<a href="https://omarray.netlify.app/" target="_blank" class="project-image-link">
-								<img src="/openmadness.png" alt="Openmadness Documentation" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">View Project</span>
-								</div>
-							</a>
-							<h3>Openmadness Documentation</h3>
-							<p>Led documentation setup using VuePress with structured content architecture, navigation design, and team coordination for open-source project.</p>
-							<div class="tech-stack">
-								<span>VuePress</span>
-								<span>GitHub</span>
-								<span>Markdown</span>
-								<span>Netlify</span>
-							</div>
-							<a href="https://omarray.netlify.app/" target="_blank" class="project-link">Live Site</a>
+				<div class="card">
+					<a href="https://omarray.netlify.app/" target="_blank" class="project-image-link">
+						<img src="/openmadness.png" alt="Openmadness Documentation" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">View Project</span>
 						</div>
+					</a>
+					<h3>Openmadness Documentation</h3>
+					<p>Led documentation setup using VuePress with structured content architecture, navigation design, and team coordination for open-source project.</p>
+					<div class="tech-stack">
+						<span>VuePress</span>
+						<span>GitHub</span>
+						<span>Markdown</span>
+						<span>Netlify</span>
+					</div>
+					<a href="https://omarray.netlify.app/" target="_blank" class="project-link">Live Site</a>
+				</div>
 
-						<div class="card">
-							<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-image-link">
-								<img src="/vue.js.png" alt="Vue.js Documentation" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">View Project</span>
-								</div>
-							</a>
-							<h3>Vue.js Documentation</h3>
-							<p>Recreated Vue.js official documentation using Astro Starlight with enhanced navigation, performance optimization, and improved developer experience.</p>
-							<div class="tech-stack">
-								<span>Astro</span>
-								<span>Starlight</span>
-								<span>Markdown</span>
-								<span>Vercel</span>
-							</div>
-							<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-link">Live Site</a>
+				<div class="card">
+					<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-image-link">
+						<img src="/vue.js.png" alt="Vue.js Documentation" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">View Project</span>
 						</div>
+					</a>
+					<h3>Vue.js Documentation</h3>
+					<p>Recreated Vue.js official documentation using Astro Starlight with enhanced navigation, performance optimization, and improved developer experience.</p>
+					<div class="tech-stack">
+						<span>Astro</span>
+						<span>Starlight</span>
+						<span>Markdown</span>
+						<span>Vercel</span>
+					</div>
+					<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-link">Live Site</a>
+				</div>
 
-						<!-- NEW: The Movie Database API Documentation -->
-						<div class="card">
-							<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-image-link">
-								<img src="/moviedb-api-screenshot.png" alt="The Movie Database API Documentation" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">View Documentation</span>
-								</div>
-							</a>
-							<h3>The Movie Database API Documentation</h3>
-							<p>Modern API documentation for TMDB's REST API featuring key endpoints documented with OpenAPI specs, Postman testing, and Mintlify-generated documentation with custom adjustments.</p>
-							<div class="tech-stack">
-								<span>OpenAPI</span>
-								<span>Postman</span>
-								<span>Mintlify</span>
-								<span>REST API</span>
-								<span>YAML</span>
-							</div>
-							<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-link">View Documentation</a>
+				<!-- NEW: The Movie Database API Documentation -->
+				<div class="card">
+					<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-image-link">
+						<img src="/moviedb-api-screenshot.png" alt="The Movie Database API Documentation" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">View Documentation</span>
 						</div>
+					</a>
+					<h3>The Movie Database API Documentation</h3>
+					<p>Modern API documentation for TMDB's REST API featuring key endpoints documented with OpenAPI specs, Postman testing, and Mintlify-generated documentation with custom adjustments.</p>
+					<div class="tech-stack">
+						<span>OpenAPI</span>
+						<span>Postman</span>
+						<span>Mintlify</span>
+						<span>REST API</span>
+						<span>YAML</span>
+					</div>
+					<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-link">View Documentation</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Articles Tab - NOW 5 Articles (Added New Kgateway Guide) -->
+		<div class="tab-content" id="articles">
+			<div class="card-grid">
+				<!-- NEW: Kgateway Header Modification Article -->
+				<div class="card">
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/why-early-request-header-modification-matters-in-api-gateways-4gle" target="_blank" class="project-image-link">
+						<img src="/early-request.png" alt="Early Request Header Modification Guide" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">Read Article</span>
+						</div>
+					</a>
+					<h3>Why Early Request Header Modification Matters in API Gateways</h3>
+					<p>A technical article exploring the importance of early request header control in API gateways for security, routing, and data enrichment, with practical examples from Kgateway.</p>
+					<div class="tech-stack">
+						<span>API Gateways</span>
+						<span>Technical Writing</span>
+						<span>Security</span>
+						<span>DevOps</span>
+					</div>
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/why-early-request-header-modification-matters-in-api-gateways-4gle" target="_blank" class="project-link">Read on Dev.to</a>
+				</div>
+
+				<div class="card">
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-image-link">
+						<img src="/docsascode.webp" alt="Docs as Code & CI/CD Pipelines Article" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">Read Article</span>
+						</div>
+					</a>
+					<h3>A Beginner-Friendly Guide to Docs as Code & CI/CD Pipelines</h3>
+					<p>A comprehensive guide explaining the docs-as-code methodology and how to implement CI/CD pipelines for documentation workflows.</p>
+					<div class="tech-stack">
+						<span>Technical Writing</span>
+						<span>CI/CD</span>
+						<span>Git</span>
+						<span>Documentation</span>
+					</div>
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-link">Read on Dev.to</a>
+				</div>
+
+				<div class="card">
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-image-link">
+						<img src="/codetolive.webp" alt="Deploying Astro Starlight on Vercel Article" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">Read Article</span>
+						</div>
+					</a>
+					<h3>From Code to Live in Minutes: Deploying My Astro Starlight Static Site on Vercel</h3>
+					<p>Step-by-step guide on deploying Astro Starlight documentation sites to Vercel with best practices for performance and SEO.</p>
+					<div class="tech-stack">
+						<span>Astro</span>
+						<span>Starlight</span>
+						<span>Vercel</span>
+						<span>Deployment</span>
+					</div>
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-link">Read on Dev.to</a>
+				</div>
+
+				<!-- Midnight Network Article -->
+				<div class="card">
+					<div class="article-icon">🛡️</div>
+					<h3>Building Private Token-Gated Experiences with Midnight Network</h3>
+					<p>A comprehensive tutorial demonstrating privacy-preserving token gating using zero-knowledge proofs for Web3 applications.</p>
+					<div class="tech-stack">
+						<span>Zero-Knowledge Proofs</span>
+						<span>Web3</span>
+						<span>Blockchain</span>
+						<span>Privacy</span>
+					</div>
+					<div class="contribution-details">
+						<p><strong>Key Features:</strong></p>
+						<ul>
+							<li>Complete Shielded VIP Lounge application with tiered access</li>
+							<li>Educational mock SDK demonstrating Midnight.js patterns</li>
+							<li>Privacy-preserving error handling</li>
+							<li>Real Compact 0.24.0 syntax and compilation</li>
+						</ul>
+					</div>
+					<a href="https://github.com/Mike-4-prog/shielded-vip-lounge" target="_blank" class="project-link">View Repository</a>
+				</div>
+
+				<!-- Kgateway Tooltip Article -->
+				<div class="card">
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-image-link">
+						<img src="/kgateway-tooltip-screenshot.png" alt="Kgateway Tooltip System Article" class="project-image" />
+						<div class="image-overlay">
+							<span class="view-project">Read Article</span>
+						</div>
+					</a>
+					<h3>How I Added Glossary Tooltip Hover to Kgateway Docs (Using Hugo Shortcodes)</h3>
+					<p>A detailed technical article explaining the implementation of a glossary tooltip system for Kgateway's documentation using Hugo shortcodes and strategic UX design.</p>
+					<div class="tech-stack">
+						<span>Technical Writing</span>
+						<span>Hugo</span>
+						<span>UX Design</span>
+						<span>Documentation Strategy</span>
+					</div>
+					<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-link">Read on Dev.to</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Contributions Tab - NOW 4 Contributions (Added New Kgateway PR) -->
+		<div class="tab-content" id="contributions">
+			<div class="card-grid">
+				<!-- NEW: Kgateway Header Modification Guide -->
+				<div class="card">
+					<div class="contribution-icon">⚙️</div>
+					<h3>Kgateway - Early Request Header Modification Guide</h3>
+					<p>Authored the official "Early Request Header Modification" guide for Kgateway documentation, explaining core security and routing concepts for API gateway configuration.</p>
+					<div class="tech-stack">
+						<span>API Documentation</span>
+						<span>Technical Writing</span>
+						<span>Security</span>
+						<span>Hugo</span>
+					</div>
+					<div class="contribution-details">
+						<p><strong>Key Achievements:</strong></p>
+						<ul>
+							<li>Created comprehensive guide on early request header control in API gateways</li>
+							<li>Explained security implications and practical use cases</li>
+							<li>Added real-world examples for Kgateway implementation</li>
+							<li>Enhanced developer understanding of API gateway configuration</li>
+						</ul>
+					</div>
+					<div class="contribution-links">
+						<a href="https://github.com/kgateway-dev/kgateway.dev/pull/610" target="_blank" class="contribution-link">
+							<span class="link-title">View Merged PR</span>
+							<span class="link-description">Early Request Header Modification guide</span>
+						</a>
 					</div>
 				</div>
-				
-				<!-- Articles Tab - ALL 4 Articles -->
-				<div class="tab-content" id="articles">
-					<div class="card-grid">
-						<div class="card">
-							<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-image-link">
-								<img src="/docsascode.webp" alt="Docs as Code & CI/CD Pipelines Article" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">Read Article</span>
-								</div>
-							</a>
-							<h3>A Beginner-Friendly Guide to Docs as Code & CI/CD Pipelines</h3>
-							<p>A comprehensive guide explaining the docs-as-code methodology and how to implement CI/CD pipelines for documentation workflows.</p>
-							<div class="tech-stack">
-								<span>Technical Writing</span>
-								<span>CI/CD</span>
-								<span>Git</span>
-								<span>Documentation</span>
-							</div>
-							<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-link">Read on Dev.to</a>
-						</div>
 
-						<div class="card">
-							<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-image-link">
-								<img src="/codetolive.webp" alt="Deploying Astro Starlight on Vercel Article" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">Read Article</span>
-								</div>
-							</a>
-							<h3>From Code to Live in Minutes: Deploying My Astro Starlight Static Site on Vercel</h3>
-							<p>Step-by-step guide on deploying Astro Starlight documentation sites to Vercel with best practices for performance and SEO.</p>
-							<div class="tech-stack">
-								<span>Astro</span>
-								<span>Starlight</span>
-								<span>Vercel</span>
-								<span>Deployment</span>
-							</div>
-							<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-link">Read on Dev.to</a>
-						</div>
-
-						<!-- Midnight Network Article -->
-						<div class="card">
-							<div class="article-icon">🛡️</div>
-							<h3>Building Private Token-Gated Experiences with Midnight Network</h3>
-							<p>A comprehensive tutorial demonstrating privacy-preserving token gating using zero-knowledge proofs for Web3 applications.</p>
-							<div class="tech-stack">
-								<span>Zero-Knowledge Proofs</span>
-								<span>Web3</span>
-								<span>Blockchain</span>
-								<span>Privacy</span>
-							</div>
-							<div class="contribution-details">
-								<p><strong>Key Features:</strong></p>
-								<ul>
-									<li>Complete Shielded VIP Lounge application with tiered access</li>
-									<li>Educational mock SDK demonstrating Midnight.js patterns</li>
-									<li>Privacy-preserving error handling</li>
-									<li>Real Compact 0.24.0 syntax and compilation</li>
-								</ul>
-							</div>
-							<a href="https://github.com/Mike-4-prog/shielded-vip-lounge" target="_blank" class="project-link">View Repository</a>
-						</div>
-
-						<!-- NEW: Kgateway Tooltip Article -->
-						<div class="card">
-							<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-image-link">
-								<img src="/kgateway-tooltip-screenshot.png" alt="Kgateway Tooltip System Article" class="project-image" />
-								<div class="image-overlay">
-									<span class="view-project">Read Article</span>
-								</div>
-							</a>
-							<h3>How I Added Glossary Tooltip Hover to Kgateway Docs (Using Hugo Shortcodes)</h3>
-							<p>A detailed technical article explaining the implementation of a glossary tooltip system for Kgateway's documentation using Hugo shortcodes and strategic UX design.</p>
-							<div class="tech-stack">
-								<span>Technical Writing</span>
-								<span>Hugo</span>
-								<span>UX Design</span>
-								<span>Documentation Strategy</span>
-							</div>
-							<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-link">Read on Dev.to</a>
-						</div>
+				<!-- Kgateway Glossary Tooltip System -->
+				<div class="card">
+					<div class="contribution-icon">💡</div>
+					<h3>Kgateway - Glossary Tooltip System</h3>
+					<p>Designed and implemented a comprehensive glossary tooltip system for Kgateway technical documentation using Hugo shortcodes.</p>
+					<div class="tech-stack">
+						<span>Hugo</span>
+						<span>Technical Writing</span>
+						<span>UX Design</span>
+						<span>Content Strategy</span>
+					</div>
+					<div class="contribution-details">
+						<p><strong>Key Achievements:</strong></p>
+						<ul>
+							<li>Created strategic tooltip placement with "one tooltip per term" rule</li>
+							<li>Audited 30+ technical terms for optimal placement</li>
+							<li>Removed duplicate/distracting tooltips for cleaner UX</li>
+							<li>Enhanced understanding of Kubernetes, Envoy, and AI/LLM concepts</li>
+						</ul>
+					</div>
+					<div class="contribution-links">
+						<a href="https://github.com/kgateway-dev/kgateway.dev/pull/484" target="_blank" class="contribution-link">
+							<span class="link-title">View Merged PR</span>
+							<span class="link-description">Glossary tooltip system implementation</span>
+						</a>
 					</div>
 				</div>
-				
-				<!-- Contributions Tab - ALL 3 Contributions -->
-				<div class="tab-content" id="contributions">
-					<div class="card-grid">
-						<!-- Kgateway Glossary Tooltip System -->
-						<div class="card">
-							<div class="contribution-icon">💡</div>
-							<h3>Kgateway - Glossary Tooltip System</h3>
-							<p>Designed and implemented a comprehensive glossary tooltip system for Kgateway technical documentation using Hugo shortcodes.</p>
-							<div class="tech-stack">
-								<span>Hugo</span>
-								<span>Technical Writing</span>
-								<span>UX Design</span>
-								<span>Content Strategy</span>
-							</div>
-							<div class="contribution-details">
-								<p><strong>Key Achievements:</strong></p>
-								<ul>
-									<li>Created strategic tooltip placement with "one tooltip per term" rule</li>
-									<li>Audited 30+ technical terms for optimal placement</li>
-									<li>Removed duplicate/distracting tooltips for cleaner UX</li>
-									<li>Enhanced understanding of Kubernetes, Envoy, and AI/LLM concepts</li>
-								</ul>
-							</div>
-							<div class="contribution-links">
-								<a href="https://github.com/kgateway-dev/kgateway.dev/pull/484" target="_blank" class="contribution-link">
-									<span class="link-title">View Merged PR</span>
-									<span class="link-description">Glossary tooltip system implementation</span>
-								</a>
-							</div>
-						</div>
 
-						<!-- Opsimate Community Leadership -->
-						<div class="card">
-							<div class="contribution-icon">🏆</div>
-							<h3>Opsimate - Community Leader</h3>
-							<p>Leading documentation strategy and community engagement for Opsimate's open-source infrastructure monitoring platform.</p>
-							<div class="tech-stack">
-								<span>Documentation Strategy</span>
-								<span>Community Leadership</span>
-								<span>Technical Writing</span>
-								<span>Open Source</span>
-							</div>
-							<div class="contribution-details">
-								<p><strong>Key Achievements:</strong></p>
-								<ul>
-									<li>Documentation maintenance and strategic planning</li>
-									<li>Community engagement and contributor mentorship</li>
-									<li>Hacktoberfest 2025 coordination</li>
-									<li>Created 5+ "good first issues" for new contributors</li>
-								</ul>
-							</div>
-						</div>
+				<!-- Opsimate Community Leadership -->
+				<div class="card">
+					<div class="contribution-icon">🏆</div>
+					<h3>Opsimate - Community Leader</h3>
+					<p>Leading documentation strategy and community engagement for Opsimate's open-source infrastructure monitoring platform.</p>
+					<div class="tech-stack">
+						<span>Documentation Strategy</span>
+						<span>Community Leadership</span>
+						<span>Technical Writing</span>
+						<span>Open Source</span>
+					</div>
+					<div class="contribution-details">
+						<p><strong>Key Achievements:</strong></p>
+						<ul>
+							<li>Documentation maintenance and strategic planning</li>
+							<li>Community engagement and contributor mentorship</li>
+							<li>Hacktoberfest 2025 coordination</li>
+							<li>Created 5+ "good first issues" for new contributors</li>
+						</ul>
+					</div>
+				</div>
 
-						<!-- Opsimate Technical Contributions -->
-						<div class="card">
-							<div class="contribution-icon">🔧</div>
-							<h3>Opsimate Documentation Improvements</h3>
-							<p>Technical enhancements and feature implementations for Opsimate's documentation platform.</p>
-							<div class="tech-stack">
-								<span>UI/UX</span>
-								<span>Google Analytics</span>
-								<span>Cookie Consent</span>
-								<span>Algolia Search</span>
-							</div>
-							<div class="contribution-links">
-								<a href="https://github.com/OpsiMate/documentation/pull/4" target="_blank" class="contribution-link">
-									<span class="link-title">Enhanced homepage & integrations</span>
-									<span class="link-description">Added icons, improved contrast, prepared Algolia search</span>
-								</a>
-								<a href="https://github.com/OpsiMate/documentation/pull/40" target="_blank" class="contribution-link">
-									<span class="link-title">GA4 analytics + cookie consent</span>
-									<span class="link-description">Implemented analytics tracking and legal compliance features</span>
-								</a>
-							</div>
-						</div>
+				<!-- Opsimate Technical Contributions -->
+				<div class="card">
+					<div class="contribution-icon">🔧</div>
+					<h3>Opsimate Documentation Improvements</h3>
+					<p>Technical enhancements and feature implementations for Opsimate's documentation platform.</p>
+					<div class="tech-stack">
+						<span>UI/UX</span>
+						<span>Google Analytics</span>
+						<span>Cookie Consent</span>
+						<span>Algolia Search</span>
+					</div>
+					<div class="contribution-links">
+						<a href="https://github.com/OpsiMate/documentation/pull/4" target="_blank" class="contribution-link">
+							<span class="link-title">Enhanced homepage & integrations</span>
+							<span class="link-description">Added icons, improved contrast, prepared Algolia search</span>
+						</a>
+						<a href="https://github.com/OpsiMate/documentation/pull/40" target="_blank" class="contribution-link">
+							<span class="link-title">GA4 analytics + cookie consent</span>
+							<span class="link-description">Implemented analytics tracking and legal compliance features</span>
+						</a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</div>
+</section>
 
         <!-- About Section with Photo -->
 <section id="about" class="section">
