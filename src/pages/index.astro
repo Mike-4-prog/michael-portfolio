@@ -20,19 +20,25 @@ import '../styles/custom.css';
 					<a href="#home">Home</a>
 					<a href="#projects">Projects</a>
 					<a href="#about">About</a>
+					<a href="#testimonials">Testimonials</a>
 					<a href="#contact">Contact</a>
 				</div>
 			</div>
 		</nav>
 
-		<!-- Home/Hero Section with Photo -->
+		<!-- Home/Hero Section -->
 		<section id="home" class="hero">
 			<div class="container">
 				<div class="hero-content">
 					<div class="hero-text">
 						<h1 class="hero-title">Michael Uzukwu</h1>
-						<p class="hero-tagline">Technical Writer & Documentation Specialist</p>
-						<p class="hero-description">I transform complex technical concepts into clear, concise, and user-friendly documentation. Specializing in API documentation, technical articles, and product documentation.</p>
+						<p class="hero-tagline">Technical Writer & Documentation Engineer | LFX-CNCF Mentee</p>
+						<p class="hero-description">
+							I transform complex technical concepts into clear, concise, and user-friendly documentation. 
+							Specializing in API documentation, developer tooling, and cloud-native infrastructure. 
+							Recently completed an LFX-CNCF mentorship for kgateway, documenting OIDC and JWT integrations 
+							for identity providers.
+						</p>
 						<div class="hero-actions">
 							<a href="#projects" class="hero-btn">View My Work →</a>
 							<a href="#contact" class="hero-btn secondary">Contact Me ↗</a>
@@ -46,459 +52,523 @@ import '../styles/custom.css';
 		</section>
 
 		<!-- Projects Section -->
-<section id="projects" class="section">
-	<div class="container">
-		<h2>Featured Work</h2>
-		
-		<div class="work-tabs">
-			<button class="tab-button active" data-tab="documentation">Documentation</button>
-			<button class="tab-button" data-tab="articles">Articles</button>
-			<button class="tab-button" data-tab="contributions">Contributions</button>
-		</div>
-		
-		<!-- Documentation Tab - ALL 4 Projects -->
-		<div class="tab-content active" id="documentation">
-			<div class="card-grid">
-				<div class="card">
-					<a href="https://refract-production.netlify.app/" target="_blank" class="project-image-link">
-						<img src="/refract.png" alt="Refract Documentation" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">View Project</span>
+		<section id="projects" class="section">
+			<div class="container">
+				<h2>Featured Work</h2>
+
+				<div class="work-tabs">
+					<button class="tab-button active" data-tab="documentation">Documentation</button>
+					<button class="tab-button" data-tab="articles">Articles</button>
+					<button class="tab-button" data-tab="contributions">Contributions</button>
+				</div>
+
+				<!-- Documentation Tab -->
+				<div class="tab-content active" id="documentation">
+					<div class="card-grid">
+						<!-- api2md – API Documentation Automation Tool -->
+						<div class="card">
+							<a href="https://github.com/Mike-4-prog/api2md" target="_blank" class="project-image-link">
+								<img src="/api2md.png" alt="api2md – API Documentation Automation Tool" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Repository</span>
+								</div>
+							</a>
+							<h3>api2md – API Documentation Automation Tool</h3>
+							<p>An API documentation automation tool that converts OpenAPI specs into Markdown, detects version changes between releases, and generates AI-powered descriptions for new endpoints using Ollama. The MVP is complete and currently in testing against real-world APIs (GitHub, Stripe, and Kubernetes Gateway API) to validate accuracy, performance, and edge cases before production release.</p>
+							<div class="tech-stack">
+								<span>Python</span>
+								<span>OpenAPI</span>
+								<span>Markdown</span>
+								<span>Ollama</span>
+								<span>CI/CD</span>
+							</div>
+							<a href="https://github.com/Mike-4-prog/api2md" target="_blank" class="project-link">View Repository</a>
 						</div>
-					</a>
-					<h3>Refract Documentation</h3>
-					<p>Technical writing capstone project featuring Docusaurus documentation with Algolia search integration and modern design patterns.</p>
-					<div class="tech-stack">
-						<span>Docusaurus</span>
-						<span>Algolia</span>
-						<span>React</span>
-						<span>Markdown</span>
-					</div>
-					<a href="https://refract-production.netlify.app/" target="_blank" class="project-link">Live Site</a>
-				</div>
 
-				<div class="card">
-					<a href="https://omarray.netlify.app/" target="_blank" class="project-image-link">
-						<img src="/openmadness.png" alt="Openmadness Documentation" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">View Project</span>
+						<!-- Refract Documentation -->
+						<div class="card">
+							<a href="https://refract-production.netlify.app/" target="_blank" class="project-image-link">
+								<img src="/refract.png" alt="Refract Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Project</span>
+								</div>
+							</a>
+							<h3>Refract Documentation</h3>
+							<p>Technical writing capstone project featuring Docusaurus documentation with Algolia search integration and modern design patterns.</p>
+							<div class="tech-stack">
+								<span>Docusaurus</span>
+								<span>Algolia</span>
+								<span>React</span>
+								<span>Markdown</span>
+							</div>
+							<a href="https://refract-production.netlify.app/" target="_blank" class="project-link">Live Site</a>
 						</div>
-					</a>
-					<h3>Openmadness Documentation</h3>
-					<p>Led documentation setup using VuePress with structured content architecture, navigation design, and team coordination for open-source project.</p>
-					<div class="tech-stack">
-						<span>VuePress</span>
-						<span>GitHub</span>
-						<span>Markdown</span>
-						<span>Netlify</span>
-					</div>
-					<a href="https://omarray.netlify.app/" target="_blank" class="project-link">Live Site</a>
-				</div>
 
-				<div class="card">
-					<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-image-link">
-						<img src="/vue.js.png" alt="Vue.js Documentation" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">View Project</span>
+						<!-- Openmadness Documentation -->
+						<div class="card">
+							<a href="https://omarray.netlify.app/" target="_blank" class="project-image-link">
+								<img src="/openmadness.png" alt="Openmadness Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Project</span>
+								</div>
+							</a>
+							<h3>Openmadness Documentation</h3>
+							<p>Led documentation setup using VuePress with structured content architecture, navigation design, and team coordination for open-source project.</p>
+							<div class="tech-stack">
+								<span>VuePress</span>
+								<span>GitHub</span>
+								<span>Markdown</span>
+								<span>Netlify</span>
+							</div>
+							<a href="https://omarray.netlify.app/" target="_blank" class="project-link">Live Site</a>
 						</div>
-					</a>
-					<h3>Vue.js Documentation</h3>
-					<p>Recreated Vue.js official documentation using Astro Starlight with enhanced navigation, performance optimization, and improved developer experience.</p>
-					<div class="tech-stack">
-						<span>Astro</span>
-						<span>Starlight</span>
-						<span>Markdown</span>
-						<span>Vercel</span>
-					</div>
-					<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-link">Live Site</a>
-				</div>
 
-				<!-- NEW: The Movie Database API Documentation -->
-				<div class="card">
-					<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-image-link">
-						<img src="/moviedb-api-screenshot.png" alt="The Movie Database API Documentation" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">View Documentation</span>
+						<!-- Vue.js Documentation -->
+						<div class="card">
+							<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-image-link">
+								<img src="/vue.js.png" alt="Vue.js Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Project</span>
+								</div>
+							</a>
+							<h3>Vue.js Documentation</h3>
+							<p>Recreated Vue.js official documentation using Astro Starlight with enhanced navigation, performance optimization, and improved developer experience.</p>
+							<div class="tech-stack">
+								<span>Astro</span>
+								<span>Starlight</span>
+								<span>Markdown</span>
+								<span>Vercel</span>
+							</div>
+							<a href="https://vue-js-nine-rouge.vercel.app/" target="_blank" class="project-link">Live Site</a>
 						</div>
-					</a>
-					<h3>The Movie Database API Documentation</h3>
-					<p>Modern API documentation for TMDB's REST API featuring key endpoints documented with OpenAPI specs, Postman testing, and Mintlify-generated documentation with custom adjustments.</p>
-					<div class="tech-stack">
-						<span>OpenAPI</span>
-						<span>Postman</span>
-						<span>Mintlify</span>
-						<span>REST API</span>
-						<span>YAML</span>
-					</div>
-					<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-link">View Documentation</a>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Articles Tab - NOW 5 Articles (Added New Kgateway Guide) -->
-		<div class="tab-content" id="articles">
-			<div class="card-grid">
-				<!-- NEW: Kgateway Header Modification Article -->
-				<div class="card">
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/why-early-request-header-modification-matters-in-api-gateways-4gle" target="_blank" class="project-image-link">
-						<img src="/early-request.png" alt="Early Request Header Modification Guide" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">Read Article</span>
-						</div>
-					</a>
-					<h3>Why Early Request Header Modification Matters in API Gateways</h3>
-					<p>A technical article exploring the importance of early request header control in API gateways for security, routing, and data enrichment, with practical examples from Kgateway.</p>
-					<div class="tech-stack">
-						<span>API Gateways</span>
-						<span>Technical Writing</span>
-						<span>Security</span>
-						<span>DevOps</span>
-					</div>
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/why-early-request-header-modification-matters-in-api-gateways-4gle" target="_blank" class="project-link">Read on Dev.to</a>
-				</div>
 
-				<div class="card">
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-image-link">
-						<img src="/docsascode.webp" alt="Docs as Code & CI/CD Pipelines Article" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">Read Article</span>
-						</div>
-					</a>
-					<h3>A Beginner-Friendly Guide to Docs as Code & CI/CD Pipelines</h3>
-					<p>A comprehensive guide explaining the docs-as-code methodology and how to implement CI/CD pipelines for documentation workflows.</p>
-					<div class="tech-stack">
-						<span>Technical Writing</span>
-						<span>CI/CD</span>
-						<span>Git</span>
-						<span>Documentation</span>
-					</div>
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-link">Read on Dev.to</a>
-				</div>
-
-				<div class="card">
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-image-link">
-						<img src="/codetolive.webp" alt="Deploying Astro Starlight on Vercel Article" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">Read Article</span>
-						</div>
-					</a>
-					<h3>From Code to Live in Minutes: Deploying My Astro Starlight Static Site on Vercel</h3>
-					<p>Step-by-step guide on deploying Astro Starlight documentation sites to Vercel with best practices for performance and SEO.</p>
-					<div class="tech-stack">
-						<span>Astro</span>
-						<span>Starlight</span>
-						<span>Vercel</span>
-						<span>Deployment</span>
-					</div>
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-link">Read on Dev.to</a>
-				</div>
-
-				<!-- Midnight Network Article -->
-				<div class="card">
-					<div class="article-icon">🛡️</div>
-					<h3>Building Private Token-Gated Experiences with Midnight Network</h3>
-					<p>A comprehensive tutorial demonstrating privacy-preserving token gating using zero-knowledge proofs for Web3 applications.</p>
-					<div class="tech-stack">
-						<span>Zero-Knowledge Proofs</span>
-						<span>Web3</span>
-						<span>Blockchain</span>
-						<span>Privacy</span>
-					</div>
-					<div class="contribution-details">
-						<p><strong>Key Features:</strong></p>
-						<ul>
-							<li>Complete Shielded VIP Lounge application with tiered access</li>
-							<li>Educational mock SDK demonstrating Midnight.js patterns</li>
-							<li>Privacy-preserving error handling</li>
-							<li>Real Compact 0.24.0 syntax and compilation</li>
-						</ul>
-					</div>
-					<a href="https://github.com/Mike-4-prog/shielded-vip-lounge" target="_blank" class="project-link">View Repository</a>
-				</div>
-
-				<!-- Kgateway Tooltip Article -->
-				<div class="card">
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-image-link">
-						<img src="/kgateway-tooltip-screenshot.png" alt="Kgateway Tooltip System Article" class="project-image" />
-						<div class="image-overlay">
-							<span class="view-project">Read Article</span>
-						</div>
-					</a>
-					<h3>How I Added Glossary Tooltip Hover to Kgateway Docs (Using Hugo Shortcodes)</h3>
-					<p>A detailed technical article explaining the implementation of a glossary tooltip system for Kgateway's documentation using Hugo shortcodes and strategic UX design.</p>
-					<div class="tech-stack">
-						<span>Technical Writing</span>
-						<span>Hugo</span>
-						<span>UX Design</span>
-						<span>Documentation Strategy</span>
-					</div>
-					<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-link">Read on Dev.to</a>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Contributions Tab - NOW 4 Contributions (Added New Kgateway PR) -->
-		<div class="tab-content" id="contributions">
-			<div class="card-grid">
-				<!-- NEW: Kgateway Header Modification Guide -->
-				<div class="card">
-					<div class="contribution-icon">⚙️</div>
-					<h3>Kgateway - Early Request Header Modification Guide</h3>
-					<p>Authored the official "Early Request Header Modification" guide for Kgateway documentation, explaining core security and routing concepts for API gateway configuration.</p>
-					<div class="tech-stack">
-						<span>API Documentation</span>
-						<span>Technical Writing</span>
-						<span>Security</span>
-						<span>Hugo</span>
-					</div>
-					<div class="contribution-details">
-						<p><strong>Key Achievements:</strong></p>
-						<ul>
-							<li>Created comprehensive guide on early request header control in API gateways</li>
-							<li>Explained security implications and practical use cases</li>
-							<li>Added real-world examples for Kgateway implementation</li>
-							<li>Enhanced developer understanding of API gateway configuration</li>
-						</ul>
-					</div>
-					<div class="contribution-links">
-						<a href="https://github.com/kgateway-dev/kgateway.dev/pull/610" target="_blank" class="contribution-link">
-							<span class="link-title">View Merged PR</span>
-							<span class="link-description">Early Request Header Modification guide</span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Kgateway Glossary Tooltip System -->
-				<div class="card">
-					<div class="contribution-icon">💡</div>
-					<h3>Kgateway - Glossary Tooltip System</h3>
-					<p>Designed and implemented a comprehensive glossary tooltip system for Kgateway technical documentation using Hugo shortcodes.</p>
-					<div class="tech-stack">
-						<span>Hugo</span>
-						<span>Technical Writing</span>
-						<span>UX Design</span>
-						<span>Content Strategy</span>
-					</div>
-					<div class="contribution-details">
-						<p><strong>Key Achievements:</strong></p>
-						<ul>
-							<li>Created strategic tooltip placement with "one tooltip per term" rule</li>
-							<li>Audited 30+ technical terms for optimal placement</li>
-							<li>Removed duplicate/distracting tooltips for cleaner UX</li>
-							<li>Enhanced understanding of Kubernetes, Envoy, and AI/LLM concepts</li>
-						</ul>
-					</div>
-					<div class="contribution-links">
-						<a href="https://github.com/kgateway-dev/kgateway.dev/pull/484" target="_blank" class="contribution-link">
-							<span class="link-title">View Merged PR</span>
-							<span class="link-description">Glossary tooltip system implementation</span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Opsimate Community Leadership -->
-				<div class="card">
-					<div class="contribution-icon">🏆</div>
-					<h3>Opsimate - Community Leader</h3>
-					<p>Leading documentation strategy and community engagement for Opsimate's open-source infrastructure monitoring platform.</p>
-					<div class="tech-stack">
-						<span>Documentation Strategy</span>
-						<span>Community Leadership</span>
-						<span>Technical Writing</span>
-						<span>Open Source</span>
-					</div>
-					<div class="contribution-details">
-						<p><strong>Key Achievements:</strong></p>
-						<ul>
-							<li>Documentation maintenance and strategic planning</li>
-							<li>Community engagement and contributor mentorship</li>
-							<li>Hacktoberfest 2025 coordination</li>
-							<li>Created 5+ "good first issues" for new contributors</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Opsimate Technical Contributions -->
-				<div class="card">
-					<div class="contribution-icon">🔧</div>
-					<h3>Opsimate Documentation Improvements</h3>
-					<p>Technical enhancements and feature implementations for Opsimate's documentation platform.</p>
-					<div class="tech-stack">
-						<span>UI/UX</span>
-						<span>Google Analytics</span>
-						<span>Cookie Consent</span>
-						<span>Algolia Search</span>
-					</div>
-					<div class="contribution-links">
-						<a href="https://github.com/OpsiMate/documentation/pull/4" target="_blank" class="contribution-link">
-							<span class="link-title">Enhanced homepage & integrations</span>
-							<span class="link-description">Added icons, improved contrast, prepared Algolia search</span>
-						</a>
-						<a href="https://github.com/OpsiMate/documentation/pull/40" target="_blank" class="contribution-link">
-							<span class="link-title">GA4 analytics + cookie consent</span>
-							<span class="link-description">Implemented analytics tracking and legal compliance features</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-        <!-- About Section with Photo -->
-<section id="about" class="section">
-	<div class="container">
-		<h2>About Me</h2>
-		<div class="about-content">
-			<div class="about-text">
-				<div class="about-photo-mobile">
-					<img src="/michael-photo-about.jpg" alt="Michael Uzukwu" class="profile-photo" />
-				</div>
-				<p>My journey in technical communication began during my high school days as Chief Editor of the Press Club, where I discovered my passion for transforming complex ideas into clear, accessible content. This foundation in editing and communication sparked my interest in bridging the gap between technology and users.</p>
-				
-				<p>Today, I specialize in creating comprehensive documentation that helps developers and businesses succeed with technical products. I believe great documentation doesn't just explain features—it empowers users to achieve their goals with confidence and clarity.</p>
-				
-				<p>My expertise focuses on developer tools, API documentation, and technical writing for modern software platforms. I'm particularly passionate about creating user guides, tutorials, and API references that make complex systems approachable for developers of all skill levels.</p>
-				
-				<p>I thrive on contributing to open-source projects and leading documentation initiatives that improve developer experience. From implementing glossary tooltip systems to building privacy-preserving Web3 tutorials, I enjoy tackling challenging technical documentation problems.</p>
-				
-				<p>Whether it's creating documentation from scratch, auditing existing content, or mentoring other technical writers, I approach each project with a commitment to quality, accuracy, and user-centric design. My goal is always to create documentation that not only informs but enhances the overall experience of working with technology.</p>
-			</div>
-			
-			<div class="about-sidebar">
-				<div class="about-photo-desktop">
-					<img src="/michael-photo-about.jpg" alt="Michael Uzukwu" class="profile-photo" />
-				</div>
-				
-				<!-- Three Separate Skills Cards -->
-				<div class="about-skills">
-					<!-- Documentation Tools Card -->
-					<div class="skill-card">
-						<h3>Documentation Tools</h3>
-						<div class="skill-items">
-							<div class="skill-item">Astro Starlight</div>
-							<div class="skill-item">VuePress</div>
-							<div class="skill-item">MkDocs</div>
-							<div class="skill-item">Docusaurus</div>
-							<div class="skill-item">GitBook</div>
-							<div class="skill-item">Postman</div>
-							<div class="skill-item">OpenAPI</div>
+						<!-- TMDB API Documentation -->
+						<div class="card">
+							<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-image-link">
+								<img src="/moviedb-api-screenshot.png" alt="The Movie Database API Documentation" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">View Documentation</span>
+								</div>
+							</a>
+							<h3>The Movie Database API Documentation</h3>
+							<p>Modern API documentation for TMDB's REST API featuring key endpoints documented with OpenAPI specs, Postman testing, and Mintlify-generated documentation with custom adjustments.</p>
+							<div class="tech-stack">
+								<span>OpenAPI</span>
+								<span>Postman</span>
+								<span>Mintlify</span>
+								<span>REST API</span>
+								<span>YAML</span>
+							</div>
+							<a href="https://armtecnigeriaenterprises.mintlify.app" target="_blank" class="project-link">View Documentation</a>
 						</div>
 					</div>
+				</div>
 
-					<!-- Core Expertise Card -->
-					<div class="skill-card">
-						<h3>Core Expertise</h3>
-						<div class="skill-items">
-							<div class="skill-item">API Documentation</div>
-							<div class="skill-item">Developer Portals</div>
-							<div class="skill-item">Docs as Code</div>
-							<div class="skill-item">Documentation Audits</div>
-							<div class="skill-item">Content Strategy</div>
-							<div class="skill-item">Product Documentation</div>
-							<div class="skill-item">User Guides</div>
-							<div class="skill-item">Staging & Production Environment Setup</div>
+				<!-- Articles Tab -->
+				<div class="tab-content" id="articles">
+					<div class="card-grid">
+						<!-- Early Request Header Modification Article -->
+						<div class="card">
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/why-early-request-header-modification-matters-in-api-gateways-4gle" target="_blank" class="project-image-link">
+								<img src="/early-request.png" alt="Early Request Header Modification Guide" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">Read Article</span>
+								</div>
+							</a>
+							<h3>Why Early Request Header Modification Matters in API Gateways</h3>
+							<p>A technical article exploring the importance of early request header control in API gateways for security, routing, and data enrichment, with practical examples from Kgateway.</p>
+							<div class="tech-stack">
+								<span>API Gateways</span>
+								<span>Technical Writing</span>
+								<span>Security</span>
+								<span>DevOps</span>
+							</div>
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/why-early-request-header-modification-matters-in-api-gateways-4gle" target="_blank" class="project-link">Read on Dev.to</a>
+						</div>
+
+						<!-- Docs as Code & CI/CD -->
+						<div class="card">
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-image-link">
+								<img src="/docsascode.webp" alt="Docs as Code & CI/CD Pipelines Article" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">Read Article</span>
+								</div>
+							</a>
+							<h3>A Beginner-Friendly Guide to Docs as Code & CI/CD Pipelines</h3>
+							<p>A comprehensive guide explaining the docs-as-code methodology and how to implement CI/CD pipelines for documentation workflows.</p>
+							<div class="tech-stack">
+								<span>Technical Writing</span>
+								<span>CI/CD</span>
+								<span>Git</span>
+								<span>Documentation</span>
+							</div>
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/a-beginner-friendly-guide-to-docs-as-code-cicd-pipelines-470l" target="_blank" class="project-link">Read on Dev.to</a>
+						</div>
+
+						<!-- Deploying Astro Starlight on Vercel -->
+						<div class="card">
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-image-link">
+								<img src="/codetolive.webp" alt="Deploying Astro Starlight on Vercel Article" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">Read Article</span>
+								</div>
+							</a>
+							<h3>From Code to Live in Minutes: Deploying My Astro Starlight Static Site on Vercel</h3>
+							<p>Step-by-step guide on deploying Astro Starlight documentation sites to Vercel with best practices for performance and SEO.</p>
+							<div class="tech-stack">
+								<span>Astro</span>
+								<span>Starlight</span>
+								<span>Vercel</span>
+								<span>Deployment</span>
+							</div>
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/from-code-to-live-in-minutes-deploying-my-astro-starlight-static-site-on-vercel-49ca" target="_blank" class="project-link">Read on Dev.to</a>
+						</div>
+
+						<!-- Midnight Network -->
+						<div class="card">
+							<div class="article-icon">🛡️</div>
+							<h3>Building Private Token-Gated Experiences with Midnight Network</h3>
+							<p>A comprehensive tutorial demonstrating privacy-preserving token gating using zero-knowledge proofs for Web3 applications.</p>
+							<div class="tech-stack">
+								<span>Zero-Knowledge Proofs</span>
+								<span>Web3</span>
+								<span>Blockchain</span>
+								<span>Privacy</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Key Features:</strong></p>
+								<ul>
+									<li>Complete Shielded VIP Lounge application with tiered access</li>
+									<li>Educational mock SDK demonstrating Midnight.js patterns</li>
+									<li>Privacy-preserving error handling</li>
+									<li>Real Compact 0.24.0 syntax and compilation</li>
+								</ul>
+							</div>
+							<a href="https://github.com/Mike-4-prog/shielded-vip-lounge" target="_blank" class="project-link">View Repository</a>
+						</div>
+
+						<!-- Kgateway Tooltip Article -->
+						<div class="card">
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-image-link">
+								<img src="/kgateway-tooltip-screenshot.png" alt="Kgateway Tooltip System Article" class="project-image" />
+								<div class="image-overlay">
+									<span class="view-project">Read Article</span>
+								</div>
+							</a>
+							<h3>How I Added Glossary Tooltip Hover to Kgateway Docs (Using Hugo Shortcodes)</h3>
+							<p>A detailed technical article explaining the implementation of a glossary tooltip system for Kgateway's documentation using Hugo shortcodes and strategic UX design.</p>
+							<div class="tech-stack">
+								<span>Technical Writing</span>
+								<span>Hugo</span>
+								<span>UX Design</span>
+								<span>Documentation Strategy</span>
+							</div>
+							<a href="https://dev.to/uzukwu_michael_91a95b823b/how-i-added-glossary-tooltip-hover-to-kgateway-docs-using-hugo-shortcodes-1e6o" target="_blank" class="project-link">Read on Dev.to</a>
 						</div>
 					</div>
+				</div>
 
-					<!-- Technical Skills Card -->
-					<div class="skill-card">
-						<h3>Technical Skills</h3>
-						<div class="skill-items">
-							<div class="skill-item">Markdown</div>
-							<div class="skill-item">YAML</div>
-							<div class="skill-item">HTML/CSS</div>
-							<div class="skill-item">Git/GitHub</div>
-							<div class="skill-item">CI/CD</div>
-							<div class="skill-item">REST APIs</div>
+				<!-- Contributions Tab -->
+				<div class="tab-content" id="contributions">
+					<div class="card-grid">
+						<!-- LFX Mentorship – kgateway OIDC/JWT Documentation -->
+						<div class="card">
+							<div class="contribution-icon">🎓</div>
+							<h3>LFX-CNCF Mentorship – kgateway OIDC/JWT Documentation</h3>
+							<p>Completed the LFX-CNCF Mentorship Program (Term 2 2026) for kgateway, documenting OIDC and JWT integrations for identity providers including Keycloak, Auth0, and Okta.</p>
+							<div class="tech-stack">
+								<span>OIDC</span>
+								<span>JWT</span>
+								<span>OAuth 2.0</span>
+								<span>Kubernetes</span>
+								<span>Hugo</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Key Deliverables:</strong></p>
+								<ul>
+									<li>Authored 14+ documentation pull requests for kgateway.dev</li>
+									<li>Created 5+ integration guides for identity providers (Keycloak, Auth0, Okta, Google, Entra ID)</li>
+									<li>Developed OAuth2/OIDC and JWT guides with curl examples, testing flows, and 30+ screenshots</li>
+									<li>Solved Okta MFA lockout loop by switching to a Native Application</li>
+									<li>Reorganized Keycloak guide into a modular three-page structure</li>
+									<li>Created a reusable template for identity provider guides</li>
+								</ul>
+							</div>
+							<div class="contribution-links">
+								<a href="https://github.com/kgateway-dev/kgateway.dev/issues/725" target="_blank" class="contribution-link">
+									<span class="link-title">Project Tracking Issue</span>
+									<span class="link-description">kgateway-dev/kgateway.dev#725</span>
+								</a>
+							</div>
+						</div>
+
+						<!-- Kgateway Header Modification Guide -->
+						<div class="card">
+							<div class="contribution-icon">⚙️</div>
+							<h3>Kgateway - Early Request Header Modification Guide</h3>
+							<p>Authored the official "Early Request Header Modification" guide for Kgateway documentation, explaining core security and routing concepts for API gateway configuration.</p>
+							<div class="tech-stack">
+								<span>API Documentation</span>
+								<span>Technical Writing</span>
+								<span>Security</span>
+								<span>Hugo</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Key Achievements:</strong></p>
+								<ul>
+									<li>Created comprehensive guide on early request header control in API gateways</li>
+									<li>Explained security implications and practical use cases</li>
+									<li>Added real-world examples for Kgateway implementation</li>
+									<li>Enhanced developer understanding of API gateway configuration</li>
+								</ul>
+							</div>
+							<div class="contribution-links">
+								<a href="https://github.com/kgateway-dev/kgateway.dev/pull/610" target="_blank" class="contribution-link">
+									<span class="link-title">View Merged PR</span>
+									<span class="link-description">Early Request Header Modification guide</span>
+								</a>
+							</div>
+						</div>
+
+						<!-- Kgateway Glossary Tooltip System -->
+						<div class="card">
+							<div class="contribution-icon">💡</div>
+							<h3>Kgateway - Glossary Tooltip System</h3>
+							<p>Designed and implemented a comprehensive glossary tooltip system for Kgateway technical documentation using Hugo shortcodes.</p>
+							<div class="tech-stack">
+								<span>Hugo</span>
+								<span>Technical Writing</span>
+								<span>UX Design</span>
+								<span>Content Strategy</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Key Achievements:</strong></p>
+								<ul>
+									<li>Created strategic tooltip placement with "one tooltip per term" rule</li>
+									<li>Audited 30+ technical terms for optimal placement</li>
+									<li>Removed duplicate/distracting tooltips for cleaner UX</li>
+									<li>Enhanced understanding of Kubernetes, Envoy, and AI/LLM concepts</li>
+								</ul>
+							</div>
+							<div class="contribution-links">
+								<a href="https://github.com/kgateway-dev/kgateway.dev/pull/484" target="_blank" class="contribution-link">
+									<span class="link-title">View Merged PR</span>
+									<span class="link-description">Glossary tooltip system implementation</span>
+								</a>
+							</div>
+						</div>
+
+						<!-- Opsimate Community Leadership -->
+						<div class="card">
+							<div class="contribution-icon">🏆</div>
+							<h3>Opsimate - Community Leader</h3>
+							<p>Leading documentation strategy and community engagement for Opsimate's open-source infrastructure monitoring platform.</p>
+							<div class="tech-stack">
+								<span>Documentation Strategy</span>
+								<span>Community Leadership</span>
+								<span>Technical Writing</span>
+								<span>Open Source</span>
+							</div>
+							<div class="contribution-details">
+								<p><strong>Key Achievements:</strong></p>
+								<ul>
+									<li>Documentation maintenance and strategic planning</li>
+									<li>Community engagement and contributor mentorship</li>
+									<li>Hacktoberfest 2025 coordination</li>
+									<li>Created 5+ "good first issues" for new contributors</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Opsimate Technical Contributions -->
+						<div class="card">
+							<div class="contribution-icon">🔧</div>
+							<h3>Opsimate Documentation Improvements</h3>
+							<p>Technical enhancements and feature implementations for Opsimate's documentation platform.</p>
+							<div class="tech-stack">
+								<span>UI/UX</span>
+								<span>Google Analytics</span>
+								<span>Cookie Consent</span>
+								<span>Algolia Search</span>
+							</div>
+							<div class="contribution-links">
+								<a href="https://github.com/OpsiMate/documentation/pull/4" target="_blank" class="contribution-link">
+									<span class="link-title">Enhanced homepage & integrations</span>
+									<span class="link-description">Added icons, improved contrast, prepared Algolia search</span>
+								</a>
+								<a href="https://github.com/OpsiMate/documentation/pull/40" target="_blank" class="contribution-link">
+									<span class="link-title">GA4 analytics + cookie consent</span>
+									<span class="link-description">Implemented analytics tracking and legal compliance features</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Get In Touch</h2>
-        <div class="contact-content">
-            <p class="contact-intro">Ready to work together? Let's create clear, concise, and user-friendly documentation for your product or service.</p>
-            
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="your.email@example.com">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject">
-                                <option value="">What is this regarding?</option>
-                                <option value="documentation">Documentation Project</option>
-                                <option value="consulting">Consulting Work</option>
-                                <option value="collaboration">Collaboration</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Your message..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <div class="info-section">
-                        <h3>Email</h3>
-                        <p>Contact me directly at:</p>
-						<a href="mailto:michael.uzukwu@example.com" class="contact-link">michael.uzukwu@example.com</a>
-                    </div>
-                    
-                    <div class="info-section">
-                        <h3>Connect With Me</h3>
-                        <div class="social-links">
-                            <a href="https://github.com/mike-4-prog" target="_blank" class="social-link">
-                                GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/michael-uzukwu/" target="_blank" class="social-link">
-                                LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="info-section">
-                        <h3>Availability</h3>
-                        <p>I'm currently available for freelance work and consulting on technical documentation projects. Reach out!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+		<!-- About Section -->
+		<section id="about" class="section">
+			<div class="container">
+				<h2>About Me</h2>
+				<div class="about-content">
+					<div class="about-text">
+						<div class="about-photo-mobile">
+							<img src="/michael-photo-about.jpg" alt="Michael Uzukwu" class="profile-photo" />
+						</div>
+						<p>My journey in technical communication began during my high school days as Chief Editor of the Press Club, where I discovered my passion for transforming complex ideas into clear, accessible content. This foundation in editing and communication sparked my interest in bridging the gap between technology and users.</p>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 Michael Uzukwu. All rights reserved.</p>
-    </div>
-</footer>
+						<p>Today, I specialize in creating comprehensive documentation that helps developers and businesses succeed with technical products. I believe great documentation doesn't just explain features—it empowers users to achieve their goals with confidence and clarity.</p>
 
-<!-- Scripts -->
-<script is:inline src="/tabs.js"></script>
-</body>
+						<p>My expertise focuses on developer tools, API documentation, and technical writing for modern software platforms. I'm particularly passionate about creating user guides, tutorials, and API references that make complex systems approachable for developers of all skill levels.</p>
+
+						<p>In 2026, I completed an LFX-CNCF mentorship for kgateway, where I documented OIDC and JWT integrations for identity providers including Keycloak, Auth0, and Okta. I authored 14+ documentation pull requests, created 5 integration guides, and developed a reusable template for identity provider documentation. This experience deepened my understanding of authentication flows, Kubernetes, and open source collaboration.</p>
+
+						<p>I thrive on contributing to open-source projects and leading documentation initiatives that improve developer experience. From implementing glossary tooltip systems to building privacy-preserving Web3 tutorials, I enjoy tackling challenging technical documentation problems.</p>
+
+						<p>Whether it's creating documentation from scratch, auditing existing content, or mentoring other technical writers, I approach each project with a commitment to quality, accuracy, and user-centric design. My goal is always to create documentation that not only informs but enhances the overall experience of working with technology.</p>
+					</div>
+
+					<div class="about-sidebar">
+						<div class="about-photo-desktop">
+							<img src="/michael-photo-about.jpg" alt="Michael Uzukwu" class="profile-photo" />
+						</div>
+
+						<!-- Skills Cards -->
+						<div class="about-skills">
+							<div class="skill-card">
+								<h3>Documentation Tools</h3>
+								<div class="skill-items">
+									<div class="skill-item">Astro Starlight</div>
+									<div class="skill-item">VuePress</div>
+									<div class="skill-item">MkDocs</div>
+									<div class="skill-item">Docusaurus</div>
+									<div class="skill-item">GitBook</div>
+									<div class="skill-item">Postman</div>
+									<div class="skill-item">OpenAPI</div>
+								</div>
+							</div>
+
+							<div class="skill-card">
+								<h3>Core Expertise</h3>
+								<div class="skill-items">
+									<div class="skill-item">API Documentation</div>
+									<div class="skill-item">Developer Portals</div>
+									<div class="skill-item">Docs as Code</div>
+									<div class="skill-item">Documentation Audits</div>
+									<div class="skill-item">Content Strategy</div>
+									<div class="skill-item">Product Documentation</div>
+									<div class="skill-item">User Guides</div>
+									<div class="skill-item">Staging & Production Environment Setup</div>
+								</div>
+							</div>
+
+							<div class="skill-card">
+								<h3>Technical Skills</h3>
+								<div class="skill-items">
+									<div class="skill-item">Markdown</div>
+									<div class="skill-item">YAML</div>
+									<div class="skill-item">HTML/CSS</div>
+									<div class="skill-item">Git/GitHub</div>
+									<div class="skill-item">CI/CD</div>
+									<div class="skill-item">REST APIs</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section id="testimonials" class="section">
+			<div class="container">
+				<h2>Recommendations</h2>
+				<div class="testimonial-grid">
+					<div class="testimonial-card">
+						<blockquote>
+							"As a docs maintainer for the kgateway open source project, I mentored Michael during the LFX 2026 Term 2 mentorship program. Michael worked on topics related to network security, particular Identity Providers (IdP) and JWT policies. He reviewed existing content, updated it for new settings, and created new guides based off templates and similar docs, using tools such as GitHub, Hugo static site markdown, and AI. He was diligent at following up on his progress throughout the program, including many rounds of iterations on the pull requests."
+						</blockquote>
+						<p class="testimonial-author">— Art Berger, kgateway Maintainer</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="section">
+			<div class="container">
+				<h2>Get In Touch</h2>
+				<div class="contact-content">
+					<p class="contact-intro">Ready to work together? Let's create clear, concise, and user-friendly documentation for your product or service.</p>
+
+					<div class="contact-grid">
+						<div class="contact-form-container">
+							<form class="contact-form">
+								<div class="form-row">
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" id="name" placeholder="Your Name" />
+									</div>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" id="email" placeholder="your.email@example.com" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="subject">Subject</label>
+									<select id="subject">
+										<option value="">What is this regarding?</option>
+										<option value="documentation">Documentation Project</option>
+										<option value="consulting">Consulting Work</option>
+										<option value="collaboration">Collaboration</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="message">Message</label>
+									<textarea id="message" rows="5" placeholder="Your message..."></textarea>
+								</div>
+
+								<button type="submit" class="submit-btn">Send Message</button>
+							</form>
+						</div>
+
+						<div class="contact-info">
+							<div class="info-section">
+								<h3>Email</h3>
+								<p>Contact me directly at:</p>
+								<a href="mailto:uzukwuekene.michael@gmail.com" class="contact-link">uzukwuekene.michael@gmail.com</a>
+							</div>
+
+							<div class="info-section">
+								<h3>Connect With Me</h3>
+								<div class="social-links">
+									<a href="https://github.com/mike-4-prog" target="_blank" class="social-link">GitHub</a>
+									<a href="https://www.linkedin.com/in/michael-uzukwu/" target="_blank" class="social-link">LinkedIn</a>
+								</div>
+							</div>
+
+							<div class="info-section">
+								<h3>Availability</h3>
+								<p>I'm currently available for freelance work and consulting on technical documentation projects. Reach out!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 2025 Michael Uzukwu. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script is:inline src="/tabs.js"></script>
+	</body>
 </html>
